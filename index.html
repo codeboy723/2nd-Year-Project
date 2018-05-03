@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>Pattis Foods</title>
+        <link rel="stylesheet" href="css/pattis.css">
+       
+    </head>
+
+
+    <body>
+
+         <header id="intro">
+          <h1>Welcome to Pattis foods, where you can order food from your favorite resturants</h1>
+        </header>
+        <h4>Please select your resturant to see the food availalbe, or search from your resturants</h4>
+        
+        <div>
+            <form action="" onsubmit="return verify()" method="post"> 
+
+             <input id="Form_Input" type="text"> 
+             <p id = "hidden" hidden>Please enter the correct word not numbers</p>
+            <button id ="search">Search</button>
+
+            </form>
+
+           <section>
+
+        <ol>
+            <li id="ItsMyKitchen">It's My Kitchen</li>
+
+             <div id="mykitchen" hidden>
+                 <img src="images/image1.jpg" height="200px" width="200px"/>
+                 <ul>
+                     <li>Pizza</li>
+                     <li>Camorised Oinon rice</li>
+                     <li>Jollof</li>
+                     <li>Banku with Okor</li>
+                     <li>Fufu</li>
+                     <li>Spanish Omellet</li>
+                     <li>Fried Rice with Beef</li>
+                     <li>Steamed Rice with Curry Chicken</li>
+                     <li>Yong Chow Fried Rice </li>
+                 </ul>
+            </div>
+
+             <li id="BigD">Big daddies</li>
+             <div id="BigDaddies" hidden> 
+                 <img src = "images/images2.jpg" height="200px" width="200px">
+                 <ul>
+                        <li>Fried Golden Prawns</li>
+                        <li>Camorised Oinon rice</li>
+                        <li>Ampesi</li>
+                        <li>Banku with Okor</li>
+                        <li>Tacos</li>
+                        <li>Spanish Omellet</li>
+                        <li>Fried Rice with Beef</li>
+                        <li>Rice with Curry Chicken</li>
+                        <li>Mi Chow Fried Rice </li>
+                 </ul>
+             </div>
+             
+    
+             <li id="Moti">Moti Mahal</li>
+             <div id="Moti2" hidden>
+                 <img src="images/image3.jpg">
+                 <ul>
+                        <li>Pizza</li>
+                        <li>Plain Steamed Rice</li>
+                        <li>Beef Fried Rice</li>
+                        <li>Banku with Okor</li>
+                        <li>Tacos</li>
+                        <li>Fried Noodles with Assorted Meat </li>
+                        <li>Fried Rice with Beef</li>
+                        <li>Soup Noodles with Won Ton </li>
+                        <li>Soup Noodles with Vegetable </li>
+                 </ul>
+              </div>
+
+
+
+
+             <li id="Aboude">Aboude</li>
+             <div id="Aboude2" hidden>
+                 <img src="images/image4">
+                 <ul>
+                        <li>Spicy Octopus</li>
+                        <li>Plain Steamed Rice</li>
+                        <li>Beef Fried Rice</li>
+                        <li>Prawns in Shell with Curry Sauce </li>
+                        <li>Tacos</li>
+                        <li>Octopus Garlic </li>
+                        <li>Lobster Saute</li>
+                        <li>Soup Noodles with Won Ton </li>
+                        <li>Lobster in Shell with Chili Sauce </li>
+                 </ul>
+                 
+             </div>
+
+             <li id="KFC">KFC</li>
+             <div id="KFC2" hidden>
+                 <img src="images/image5.jpg" alt="IMAGE">
+                 <ul>
+                        <li>Spicy Octopus</li>
+                        <li>Fried Chicken in Five Spicy</li>
+                        <li>Beef Fried Rice</li>
+                        <li>Prawns in Shell with Curry Sauce </li>
+                        <li>Sesame Roll</li>
+                        <li>Shark's Fin Soup with Shredded Chicken  </li>
+                        <li>Chicken doughnuts 4pcs </li>
+                        <li>Soup Noodles with Won Ton </li>
+                        <li>Lobster in Shell with Chili Sauce </li>
+                 </ul>
+             </div>
+        </ol>
+           </section>
+
+           <footer>
+                <p>About Us</p>
+                <p>Contact Us 0574843781</p>
+           </footer>
+           
+
+           <script>
+           var Kitchen1 = document.getElementById("ItsMyKitchen");
+           var BigD1 = document.getElementById("BigD");
+           var moti1 = document.getElementById("Moti");
+           var Aboude1 = document.getElementById("Aboude");
+           var KFC1 = document.getElementById("KFC");
+           var form_input1 = document.getElementById("Form_Input");
+           var search1 = document.getElementById("search");
+           
+           Kitchen1.onclick = function(){
+               document.getElementById("mykitchen").removeAttribute("hidden");
+             }
+
+           BigD1.onclick = function(){
+           document.getElementById("BigDaddies").removeAttribute("hidden");
+           }
+
+           moti1.onclick = function(){
+               document.getElementById("Moti2").removeAttribute("hidden");
+           }
+
+           Aboude1.onclick = function (){
+               document.getElementById("Aboude2").removeAttribute("hidden");
+           }
+           KFC1.onclick = function(){
+               document.getElementById("KFC2").removeAttribute("hidden");
+           }
+
+           </script>
+
+           
+    </body>
+</htm>
